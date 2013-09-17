@@ -1,0 +1,1 @@
+java -cp ./;./itextmerger-1.0-SNAPSHOT.jar;./pdfsToBeMerged/ -Dlog4j.configuration=file:log4j.properties org.jayway.pdfmerger.merger.PdfMerger

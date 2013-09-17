@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+	<id>standalone</id>
+	<formats>
+		<format>dir</format>
+	</formats>
+	
+	<baseDirectory>/</baseDirectory>
+
+	<!-- Add our dependencies -->
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>lib/</outputDirectory>
+		</dependencySet>
+	</dependencySets>
+	
+	<files>
+		<file>
+			<source>${basedir}/target/itextmerger-${project.version}.jar</source>
+			<outputDirectory>/</outputDirectory>
+			<destName>itextmerger-${project.version}.jar</destName>
+		</file>
+		
+		<file>
+			<source>src/main/resources/runlocal.bat</source>
+			<outputDirectory>/</outputDirectory>
+		</file>
+		<file>
+			<source>src/main/resources/log4j.properties</source>
+			<outputDirectory>/</outputDirectory>
+		</file>
+		
+		<file>
+			<source>src/main/resources/PAGE1_21x40.pdf</source>
+			<outputDirectory>/pdfsToBeMerged</outputDirectory>
+		</file>
+		<file>
+			<source>src/main/resources/PAGE2_21x55.pdf</source>
+			<outputDirectory>/pdfsToBeMerged</outputDirectory>
+		</file>
+		<file>
+			<source>src/main/resources/PAGE3_21x10.pdf</source>
+			<outputDirectory>/pdfsToBeMerged</outputDirectory>
+		</file>
+		<file>
+			<source>src/main/resources/PAGE4_21x20.pdf</source>
+			<outputDirectory>/pdfsToBeMerged</outputDirectory>
+		</file>
+	</files>
+</assembly>
