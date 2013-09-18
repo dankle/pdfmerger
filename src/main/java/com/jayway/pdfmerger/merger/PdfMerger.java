@@ -1,4 +1,4 @@
-package org.jayway.pdfmerger.merger;
+package com.jayway.pdfmerger.merger;
  
 import java.io.FileOutputStream;
 import java.io.IOException;

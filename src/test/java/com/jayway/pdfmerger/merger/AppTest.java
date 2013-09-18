@@ -1,4 +1,4 @@
-package org.jayway.pdfmerger.merger;
+package com.jayway.pdfmerger.merger;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
